@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0056b3; /* Blue */
+  padding: 20px 30px; /* Bigger navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 65px; /* Bigger logo */
+  margin-right: 15px;
+}
+
+.school-name {
+  color: #fff;
+  font-size: 26px; /* Bigger text */
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px; /* More spacing */
+  position: relative; /* Needed for dropdown */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Show below parent */
+  left: 0;
+  background: #0056b3;
+  list-style: none;
+  min-width: 200px;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 1000; /* keeps it above other elements */
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+  background: #003f7f;
+  color: #ffdd57;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  margin-top: 100px; /* Push down a bit since navbar is taller */
+}
+
+.center-logo {
+  width: 170px; /* Larger center logo */
+  margin-bottom: 25px;
+}
+
+.center-name {
+  font-size: 30px; /* Bigger school name */
+  margin-bottom: 12px;
+  color: #0056b3;
+}
+
+.quote {
+  font-size: 18px; /* Slightly bigger */
+  font-style: italic;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  background: #0056b3;
+  color: #fff;
+  padding: 12px 28px; /* Bigger button */
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px; /* Bigger text */
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #003f7f;
+}

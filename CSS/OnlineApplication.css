@@ -1,0 +1,144 @@
+body {
+  background: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  line-height: 1.6;
+}
+
+.form-wrapper {
+  max-width: 950px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 40px 50px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header .logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 26px;
+  margin: 0;
+  color: #003366;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin-top: 6px;
+  font-weight: normal;
+  color: #555;
+}
+
+.application-form fieldset {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #fdfdfd;
+}
+
+.application-form legend {
+  font-weight: bold;
+  font-size: 15px;
+  color: #003366;
+  padding: 0 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 9px 10px;
+  margin-top: 4px;
+  border: 1px solid #adb5bd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  border-color: #003366;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 51, 102, 0.3);
+}
+
+.grid-2, .grid-3, .grid-4 {
+  display: grid;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.btn-submit {
+  background: #003366;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #00264d;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.btn-back,
+.btn-submit {
+  flex: 0 0 120px; /* fixed button width */
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-back {
+  background: #6c757d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-back:hover {
+  background: #5a6268;
+}
+
+.btn-submit {
+  background: #003366;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #00264d;
+}
+

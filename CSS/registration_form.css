@@ -1,0 +1,181 @@
+/* ===========================
+   General Layout
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   Header
+=========================== */
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: #0056b3;
+    margin: 0;
+}
+
+/* ===========================
+   Student Info
+=========================== */
+.student-info {
+    margin-bottom: 20px;
+    background: #f8faff;
+    padding: 15px;
+    border: 1px solid #e1e7f0;
+    border-radius: 8px;
+}
+
+.student-info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.student-info span {
+    font-weight: bold;
+    color: #222;
+}
+
+/* ===========================
+   Table
+=========================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table thead {
+    background: #0056b3;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Status Tags */
+.status {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status.approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+.total-row {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.total-row td {
+    border-top: 2px solid #000;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn, .btn-print {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+.btn-print {
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn-print:hover {
+    background-color: #218838;
+}
+
+/* ===========================
+   Print Styles
+=========================== */
+@media print {
+    body {
+        background: #fff;
+    }
+    .container {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .btn, .btn-print {
+        display: none;
+    }
+}
